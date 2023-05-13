@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="shortcut icon" href="image/apep.jpg" type="image/x-icon" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Header-Start -->
+    <header class="header">
+      <nav class="navbar">
+        <img src="image/apep.jpg" class="logo" alt="img-logo" />
+        <div class="nav-menu">
+          <a href="#" class="menu">Home</a>
+          <a href="ourprofile.html" class="menu">Our Profile</a>
+          <a href="#message-us" class="menu">Message Us</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header-End -->
+
+    <!-- Main-Start -->
+    <main class="main-content">
+      <div class="container">
+        <section class="slide-img">
+          <h1 class="title">
+            Hi <span id="nama">Qody</span>, Welcome To My Website
+          </h1>
+          <p class="paragraf">ketik sesuatu di sini</p>
+          <div class="img">
+            <img
+              class="img-slideshow"
+              src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+            />
+            <img
+              class="img-slideshow"
+              src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+            />
+            <img
+              class="img-slideshow"
+              src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+            />
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
+          </div>
+        </section>
+        <section id="facilitation">
+          <div class="facil-list">
+            <h1 class="facil-title">Social Media</h1>
+            <div class="facil-img">
+              <div class="list-img">
+                <a href=""
+                  ><img src="image/apep.jpg" class="kontak-img" alt=""
+                /></a>
+                <p class="text-img">kontak1</p>
+              </div>
+              <div class="list-img">
+                <a href=""
+                  ><img src="image/apep.jpg" class="kontak-img" alt=""
+                /></a>
+                <p class="text-img">kontak1</p>
+              </div>
+              <div class="list-img">
+                <a href=""
+                  ><img src="image/apep.jpg" class="kontak-img" alt=""
+                /></a>
+                <p class="text-img">kontak1</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="message-us" id="message-us">
+          <div class="form-message">
+            <h1 class="message-title">Message Us</h1>
+            <div class="form-section">
+              <form name="message-form" onsubmit="return validateForm()">
+                <div class="form-input">
+                  Nama :
+                  <input placeholder="Nama" type="text" name="full-name" />
+                  <br />
+                </div>
+
+                <div class="form-input">
+                  Email :
+                  <input
+                    placeholder="Example@gmail.com"
+                    type="email"
+                    name="email"
+                  />
+                  <br />
+                </div>
+
+                <div class="form-input">
+                  PhoneNumber :
+                  <input
+                    placeholder="Phone Number"
+                    type="number"
+                    name="nomor"
+                  />
+                  <br />
+                </div>
+
+                <div class="form-input">
+                  Tanggal Lahir :
+                  <input type="date" name="birth-date" />
+                  <br />
+                </div>
+
+                <div class="form-input">
+                  Jenis Kelamin :
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Laki-laki"
+                  />
+                  <label for="male">Laki-laki</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <label for="female">Perempuan</label>
+                  <br />
+                </div>
+
+                <div class="form-input">
+                  Pesan :
+                  <textarea placeholder="Pesan" name="messages"></textarea>
+                  <br />
+                </div>
+
+                <input type="submit" value="Submit" class="btn-submit" />
+              </form>
+              <div class="form-output">
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Email : <span id="sender-email"></span></p>
+                <p>PhoneNumber : <span id="sender-nomor"></span></p>
+                <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Main-End -->
+
+    <!-- Footer-Start -->
+    <footer>
+      <p class="copyright">&copy;Qody 2023</p>
+    </footer>
+    <!-- Footer-End -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

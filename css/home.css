@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style Navbar */
+.header{
+    border: 1px solid black;
+    padding: 8px;
+    margin: 10px;
+    background: aliceblue;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 50px;
+    border-radius: 999px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    margin: 5px;
+}
+
+.menu{
+    border: 1px solid black;
+    background-color: white;
+    padding: 4px 8px;   
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.menu:hover{
+    background-color: gray;
+}
+
+/* Main-Style */
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.slide-img{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.img{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.img-slideshow{
+    width: 100%;
+}
+
+.img > button{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.facil-list{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.facil-img{
+    display: flex;
+    justify-content: center;
+}
+
+.list-img{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.text-img{
+    text-align: center;
+}
+
+.kontak-img{
+    height: 90px;
+    border-radius: 999px;
+    border: 1px solid black;
+    object-fit: cover;
+    transition: transform 0.8s;
+    cursor: pointer;
+}
+
+.kontak-img:hover{
+    transform: scale(0.8);
+}
+
+.form-message{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-input{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.form-output{
+    border: 1px solid black;
+    width: 300px;
+    height: 205px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.btn-submit{
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    padding: 3px 133px;
+    border-radius: 5px;
+}
+
+/* Footer-Style */
+.copyright{
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 12px;
+    }
+    .header{
+        border: 1px solid black;
+        padding: 8px;
+        margin: 10px;
+        background: aliceblue;
+        border-radius: 5px;
+    }
+    .logo{
+        width: 60px;
+        border-radius: 999px;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .nav-menu{
+        display: flex;
+        width: 100%;   
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+    .menu{
+        border: 1px solid black;
+        background-color: white;
+        padding: 4px 8px;   
+        border-radius: 6px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        transition: 0.3s background-color ease-out;
+    }
+
+    .facil-title{
+        margin-bottom: 10px;
+    }
+
+    .kontak-img{
+        height: 60px;
+        border-radius: 999px;
+        border: 1px solid black;
+    }
+
+    .img > button{
+        margin-top: 10px;
+        margin-left: 6px;
+        margin-bottom: 10px;
+        padding: 3px 6px;
+        border-radius: 5px;
+    }
+    
+
+    .form-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .form-section > form{
+        margin-top: 10px;
+    }
+
+    .form-input{
+        border: 1px solid black;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .form-output{
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 90%;
+        height: 300px;
+    }
+    
+    .btn-submit{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        padding: 3px 35%;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .form-output{
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 90%;
+        height: 100px;
+    }
+
+}
+@media only screen and (max-width: 599px){
+    .form-output{
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 90%;
+        height: 100px;
+    }
+}
